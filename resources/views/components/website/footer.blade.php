@@ -32,7 +32,7 @@
                          <h4>about</h4>
                      </div>
                      <div class="footer-contant">
-                         <div class="footer-logo"><img src="{{ asset("website/assets/images/icon/logo.png") }}" alt=""></div>
+                         <div class="footer-logo"><img src="{{ asset('website/assets/images/icon/logo.png') }}" alt=""></div>
                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                              ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
                          <div class="footer-social">
@@ -47,7 +47,7 @@
                      </div>
                  </div>
                  <div class="col offset-xl-1">
-                     <div class="sub-title">
+                     <div class="Sub Title">
                          <div class="footer-title">
                              <h4>my account</h4>
                          </div>
@@ -63,7 +63,7 @@
                      </div>
                  </div>
                  <div class="col">
-                     <div class="sub-title">
+                     <div class="Sub Title">
                          <div class="footer-title">
                              <h4>why we choose</h4>
                          </div>
@@ -79,7 +79,7 @@
                      </div>
                  </div>
                  <div class="col">
-                     <div class="sub-title">
+                     <div class="Sub Title">
                          <div class="footer-title">
                              <h4>store information</h4>
                          </div>
@@ -110,19 +110,19 @@
                      <div class="payment-card-bottom">
                          <ul>
                              <li>
-                                 <a href="#"><img src="{{ asset("website/assets/images/icon/visa.png") }}" alt=""></a>
+                                 <a href="#"><img src="{{ asset('website/assets/images/icon/visa.png') }}" alt=""></a>
                              </li>
                              <li>
-                                 <a href="#"><img src="{{ asset("website/assets/images/icon/mastercard.png") }}" alt=""></a>
+                                 <a href="#"><img src="{{ asset('website/assets/images/icon/mastercard.png') }}" alt=""></a>
                              </li>
                              <li>
-                                 <a href="#"><img src="{{ asset("website/assets/images/icon/paypal.png") }}" alt=""></a>
+                                 <a href="#"><img src="{{ asset('website/assets/images/icon/paypal.png') }}" alt=""></a>
                              </li>
                              <li>
-                                 <a href="#"><img src="{{ asset("website/assets/images/icon/american-express.png") }}" alt=""></a>
+                                 <a href="#"><img src="{{ asset('website/assets/images/icon/american-express.png') }}" alt=""></a>
                              </li>
                              <li>
-                                 <a href="#"><img src="{{ asset("website/assets/images/icon/discover.png") }}" alt=""></a>
+                                 <a href="#"><img src="{{ asset('website/assets/images/icon/discover.png') }}" alt=""></a>
                              </li>
                          </ul>
                      </div>

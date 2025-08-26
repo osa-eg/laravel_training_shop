@@ -125,7 +125,7 @@
     <script src="{{ asset('admin/assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js') }}"></script>
 
     <!--Internal Apexchart js-->
-    <script src="{{ asset('admin/assets/js/apexcharts.js') }}"></script>
+    {{-- <script src="{{ asset('admin/assets/js/apexcharts.js') }}"></script> --}}
 
     <!-- Rating js-->
     <script src="{{ asset('admin/assets/plugins/rating/jquery.rating-stars.js') }}"></script>
@@ -156,8 +156,8 @@
     <!--Internal  index js -->
     <script src="{{ asset('admin/assets/js/index.js') }}"></script>
 
-    <!-- Apexchart js-->
-    <script src="{{ asset('admin/assets/js/apexcharts.js') }}"></script>
+    {{-- <!-- Apexchart js-->
+    <script src="{{ asset('admin/assets/js/apexcharts.js') }}"></script> --}}
 
     <!-- custom js -->
     <script src="{{ asset('admin/assets/js/custom.js') }}"></script>

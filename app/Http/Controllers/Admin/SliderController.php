@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\Slider\CreateSliderRequest;
+use App\Http\Requests\Admin\Slider\StoreSliderRequest;
 use App\Http\Requests\Admin\Slider\UpdateSliderRequest;
 use App\Models\Slider;
 use Exception;
@@ -33,7 +33,7 @@ class SliderController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(CreateSliderRequest $request)
+    public function store(StoreSliderRequest $request)
     {
         $data = $request->validated();
         try {

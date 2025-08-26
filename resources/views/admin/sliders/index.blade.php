@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="d-flex my-xl-auto right-content">
-            <a href="{{ route("sliders.create") }}" class="btn btn-primary">@lang('Add New')</a>
+            <a href="{{ route('sliders.create') }}" class="btn btn-primary">@lang('Add New')</a>
         </div>
     </div>
     <!-- breadcrumb -->
@@ -45,7 +45,7 @@
                                         <td>{{ $item->id }} </td>
                                         <td>
                                             @if ($item->image_url)
-                                                <img src="{{$item->image_url}}" width="100" height="60">
+                                                <img src="{{ $item->image_url }}" width="100" height="60">
                                             @else
                                                 @lang('Not Added')
                                             @endif
@@ -59,14 +59,14 @@
                                         </td>
                                         <td>{{ $item->sort }} </td>
                                         <td>
-                                           
-                                            <form action="{{ route('sliders.destroy',$item) }}" method="post">
+
+                                            <form action="{{ route('sliders.destroy', $item) }}" method="post">
                                                 @csrf
-                                                @method("DELETE")
-                                                 <a class="btn btn-primary btn-sm" href="{{ route('sliders.edit', $item) }}">
+                                                @method('DELETE')
+                                                <a class="btn btn-primary btn-sm" href="{{ route('sliders.edit', $item) }}">
                                                     @lang('Edit')
                                                 </a>
-                                                <button class="btn btn-sm btn-danger" type="submit"> @lang("Delete") </button>
+                                                <button class="btn btn-sm btn-danger" type="submit"> @lang('Delete') </button>
                                             </form>
                                         </td>
                                     </tr>

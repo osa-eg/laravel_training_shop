@@ -19,9 +19,9 @@
 
     @include('components.admin.alerts')
     <!-- row opened -->
-    <form action="{{ route('sliders.update',$item) }}" method="post" class="row row-sm" enctype="multipart/form-data">
+    <form action="{{ route('sliders.update', $item) }}" method="post" class="row row-sm" enctype="multipart/form-data">
         @csrf
-        @method("PUT")
+        @method('PUT')
         <div class="col-md-6 ">
             <div class="card  box-shadow-0 h-100">
                 <div class="card-header">
@@ -31,14 +31,14 @@
                     <div class="">
                         <div class="form-group">
                             <label for="title">@lang('Title')</label>
-                            <input type="text" name="title" class="form-control" id="title" value="{{ old('title',$item->title) }}" placeholder="@lang('Enter slider title')">
+                            <input type="text" name="title" class="form-control" id="title" value="{{ old('title', $item->title) }}" placeholder="@lang('Enter slider title')">
                             @error('title')
                                 <small class="text-danger d-block">{{ $message }}</small>
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="sub_title">@lang('Sub-Title')</label>
-                            <input type="text" name="sub_title" class="form-control" id="sub_title" value="{{ old('sub_title',$item->sub_title) }}" placeholder="@lang('Enter slider sub-title')">
+                            <label for="sub_title">@lang('Sub Title')</label>
+                            <input type="text" name="sub_title" class="form-control" id="sub_title" value="{{ old('sub_title', $item->sub_title) }}" placeholder="@lang('Enter slider Sub Title')">
                             @error('sub_title')
                                 <small class="text-danger d-block">{{ $message }}</small>
                             @enderror

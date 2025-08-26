@@ -2,12 +2,13 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Casts\Attribute;
+use App\Traits\Imagable;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Storage;
 
 class Slider extends Model
 {
+    use Imagable;
+
     protected $fillable = [
         'title',
         'sub_title',
@@ -20,12 +21,4 @@ class Slider extends Model
     public $appends = [
         'image_url'
     ];
-
-
-    protected function imageUrl(): Attribute
-    {
-        return Attribute::make(
-            get: fn() => $this->image_path && Storage::exists($this->image_path) ? Storage::url($this->image_path) : null
-        );
-    }
 }

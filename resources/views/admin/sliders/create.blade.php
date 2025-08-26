@@ -35,8 +35,8 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="sub_title">@lang('Sub-Title')</label>
-                            <input type="text" name="sub_title" class="form-control" id="sub_title" value="{{ old('sub_title') }}" placeholder="@lang('Enter slider sub-title')">
+                            <label for="sub_title">@lang('Sub Title')</label>
+                            <input type="text" name="sub_title" class="form-control" id="sub_title" value="{{ old('sub_title') }}" placeholder="@lang('Enter slider Sub Title')">
                             @error('sub_title')
                                 <small class="text-danger d-block">{{ $message }}</small>
                             @enderror
