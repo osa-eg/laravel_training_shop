@@ -23,7 +23,7 @@ class UpdateProductRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => ['required', 'string', 'max:30', Rule::unique('categories', 'name')->ignore($this->category->id)],
+            'name' => ['required', 'string', 'max:30', Rule::unique('categories', 'name')->ignore($this->product->id)],
             'price_before_discount' => ['required', 'numeric', 'max:9999999', 'min:0'],
             'price_after_discount' => ['required', 'numeric', 'max:9999999', 'min:0'],
             'details' => ['required', 'string', 'max:5000'],

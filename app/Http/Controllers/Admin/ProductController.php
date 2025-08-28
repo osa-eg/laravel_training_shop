@@ -28,8 +28,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        $categories = Category::select('id','name')->get();
-        return view('admin.products.create',compact('categories'));
+        $categories = Category::select('id', 'name')->get();
+        return view('admin.products.create', compact('categories'));
     }
 
     /**
@@ -58,8 +58,10 @@ class ProductController extends Controller
 
     public function edit(Product $product)
     {
+        $categories = Category::select('id', 'name')->get();
         return view('admin.products.edit', [
-            'item' => $product
+            'item' => $product,
+            'categories' => $categories
         ]);
     }
 

@@ -57,10 +57,10 @@
                                             </a>
                                         </td>
                                         <td>
-                                            <form action="{{ route('categories.destroy', $item) }}" method="post">
+                                            <form action="{{ route('bannars.destroy', $item) }}" method="post">
                                                 @csrf
                                                 @method('DELETE')
-                                                <a class="btn btn-primary btn-sm" href="{{ route('categories.edit', $item) }}">
+                                                <a class="btn btn-primary btn-sm" href="{{ route('bannars.edit', $item) }}">
                                                     @lang('Edit')
                                                 </a>
                                                 <button class="btn btn-sm btn-danger" type="submit"> @lang('Delete') </button>
